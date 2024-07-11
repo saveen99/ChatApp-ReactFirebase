@@ -24,7 +24,7 @@ function Login() {
     <div className='flex items-center justify-center w-full h-screen text-white bg-purple-600 font-body'>
         <div className='flex flex-col p-3 bg-purple-700 rounded-md shadow-md h-5/6 w-96 '>
             <div className='p-4 text-5xl font-bold text-center'>
-                SAVEE
+                SaveeApp
             </div>
             <div className='flex flex-col justify-between h-full '>
                 <h2 className='text-2xl text-center text-purple-200'>
