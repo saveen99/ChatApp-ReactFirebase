@@ -6,13 +6,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyB6bMt96bulkPt4y6-liQPVSU3IsJDMveM",
-    authDomain: "kwik-e4784.firebaseapp.com",
-    projectId: "kwik-e4784",
-    storageBucket: "kwik-e4784.appspot.com",
-    messagingSenderId: "750508784231",
-    appId: "1:750508784231:web:a8770a1e84a305d21bb2c2"
-};
+    apiKey: "AIzaSyA0e0LzwwhNtWmKuYXrEc_hNxq0D_5SPiQ",
+    authDomain: "chatapp-ab972.firebaseapp.com",
+    projectId: "chatapp-ab972",
+    storageBucket: "chatapp-ab972.appspot.com",
+    messagingSenderId: "31635183340",
+    appId: "1:31635183340:web:db56c9958fa7fe2bb537c9"
+  };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
