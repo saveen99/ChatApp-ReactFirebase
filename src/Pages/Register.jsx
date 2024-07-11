@@ -57,12 +57,12 @@ function Register() {
     }
 
   return (
-    <div className='font-body flex justify-center items-center bg-purple-600 w-full h-screen text-white '>
-        <div className='bg-purple-700 rounded-md p-3 h-5/6 shadow-md w-96 flex flex-col '>
-            <div className='text-5xl font-bold text-center p-4'>
-                KWIK 
+    <div className='flex items-center justify-center w-full h-screen text-white bg-purple-600 font-body '>
+        <div className='flex flex-col p-3 bg-purple-700 rounded-md shadow-md h-5/6 w-96 '>
+            <div className='p-4 text-5xl font-bold text-center'>
+                SAVEE 
             </div>
-            <div className='h-full flex flex-col justify-between '>
+            <div className='flex flex-col justify-between h-full '>
                 <h2 className='text-2xl text-center text-purple-200'>
                     Register Now
                 </h2>
@@ -71,39 +71,39 @@ function Register() {
                         <label>
                            Display Name 
                         </label>
-                        <input type='text' placeholder='your full name' className='rounded-md px-3 py-1 text-black' />
+                        <input type='text' placeholder='your full name' className='px-3 py-1 text-black rounded-md' />
                     </div>
                     <div className='flex flex-col p-2'>
                         <label>
                             Email
                         </label>
-                        <input type='email' placeholder='user Name' className='rounded-md px-3 py-1 text-black'/>
+                        <input type='email' placeholder='user Name' className='px-3 py-1 text-black rounded-md'/>
                     </div>
                     <div className='flex flex-col p-2'>
                         <label>
                             password
                         </label>
-                        <input type='password' placeholder='12343555' className='rounded-md px-3 py-1 text-black'/>
+                        <input type='password' placeholder='12343555' className='px-3 py-1 text-black rounded-md'/>
                     </div>
                     <div className='flex flex-col p-2'>
                         <label>
                            Confirm password
                         </label>
 
-                        <input type='password' placeholder='12343555' className='rounded-md px-3 py-1 text-black'/>
+                        <input type='password' placeholder='12343555' className='px-3 py-1 text-black rounded-md'/>
                     </div>
-                    <div className='py-1 px-2'>
-                        <input type='file' style={{display:"none"}} className='rounded-md px-2 py-1 ' id='addAve'/>
-                        <label htmlFor="addAve" className='flex gap-2 items-center cursor-pointer '>
+                    <div className='px-2 py-1'>
+                        <input type='file' style={{display:"none"}} className='px-2 py-1 rounded-md ' id='addAve'/>
+                        <label htmlFor="addAve" className='flex items-center gap-2 cursor-pointer '>
                             <img src="./add.png" className='w-10' alt="" />
                             Add an avetor
                         </label>
                     </div>
-                    <button className='bg-purple-800 hover:bg-purple-900 py-2 rounded-md m-4'>Sign up</button>
-                    { err && <span className='text-sm text-red-300 text-center -translate-y-3'>Something went wrong !!! </span> }
+                    <button className='py-2 m-4 bg-purple-800 rounded-md hover:bg-purple-900'>Sign up</button>
+                    { err && <span className='text-sm text-center text-red-300 -translate-y-3'>Something went wrong !!! </span> }
                 </form>
                 <h5>
-                    You have an account <a className='text-purple-200 hover:text-purple-50 cursor-pointer'><Link to={'/login'}>Login Now</Link></a> 
+                    You have an account <a className='text-purple-200 cursor-pointer hover:text-purple-50'><Link to={'/login'}>Login Now</Link></a> 
                 </h5>
             </div>
         </div>

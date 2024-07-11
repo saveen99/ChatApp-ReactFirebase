@@ -21,12 +21,12 @@ function Login() {
         }
     }
   return (
-    <div className='flex justify-center items-center bg-purple-600 w-full h-screen text-white font-body'>
-        <div className='bg-purple-700 rounded-md p-3 h-5/6 shadow-md w-96 flex flex-col '>
-            <div className='text-5xl font-bold text-center p-4'>
-                KWIK 
+    <div className='flex items-center justify-center w-full h-screen text-white bg-purple-600 font-body'>
+        <div className='flex flex-col p-3 bg-purple-700 rounded-md shadow-md h-5/6 w-96 '>
+            <div className='p-4 text-5xl font-bold text-center'>
+                SAVEE
             </div>
-            <div className='h-full flex flex-col justify-between '>
+            <div className='flex flex-col justify-between h-full '>
                 <h2 className='text-2xl text-center text-purple-200'>
                     Login Now
                 </h2>
@@ -35,19 +35,19 @@ function Login() {
                         <label>
                            Enter your email 
                         </label>
-                        <input type='text' placeholder='someone@gmail.com' className='rounded-md px-3 py-1 text-black'/>
+                        <input type='text' placeholder='someone@gmail.com' className='px-3 py-1 text-black rounded-md'/>
                     </div>
                     <div className='flex flex-col p-2'>
                         <label>
                             Password
                         </label>
-                        <input type='password' placeholder='......' className='rounded-md px-3 py-1 text-black'/>
+                        <input type='password' placeholder='......' className='px-3 py-1 text-black rounded-md'/>
                     </div>
-                    <button className='bg-purple-800 hover:bg-purple-900 p-2 m-4 rounded-md '>Sign up</button>
-                    { err && <span className='text-sm text-red-300 text-center -translate-y-3'>Something went wrong !!! </span> }
+                    <button className='p-2 m-4 bg-purple-800 rounded-md hover:bg-purple-900 '>Sign up</button>
+                    { err && <span className='text-sm text-center text-red-300 -translate-y-3'>Something went wrong !!! </span> }
                 </form>
                 <h5>
-                    You don't have an account <a className='text-purple-200 hover:text-purple-50 cursor-pointer'><Link to={'/register'}>Register Now</Link></a> 
+                    You don't have an account <a className='text-purple-200 cursor-pointer hover:text-purple-50'><Link to={'/register'}>Register Now</Link></a> 
                 </h5>
             </div>
         </div>
